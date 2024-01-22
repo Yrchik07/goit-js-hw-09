@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";const l=document.querySelector(".feedback-form");l.addEventListener("submit",o);function o(t){t.preventDefault();const e=t.target,m=e.elements.email.value.trim();if(e.elements.message.value.trim(),m===""||message==="")alert("All form fields must be filled in");else{let s={email:m,message};console.log(s),e.reset()}}
+//# sourceMappingURL=commonHelpers2.js.map

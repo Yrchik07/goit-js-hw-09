@@ -4,9 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script type="module" crossorigin src="/goit-js-hw-09/assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="stylesheet" href="/goit-js-hw-09/assets/2-form-230e5af4.css">
 </head>
 <body>
+  <form class="feedback-form" autocomplete="off">
+    <label>
+      <h2>Email</h2>
+      <input name="email" type="email" autofocus>
+    </label>
+    <label>
+      <h2>Message</h2>
+      <textarea name="message" rows="8"></textarea>
+    </label>
+    <button type="submit">Submit</button>
+  </form>
   
 </body>
 </html>
