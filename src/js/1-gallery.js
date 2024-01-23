@@ -69,7 +69,7 @@ const images = [
 
 const boxGallery = document.querySelector('.gallery');
 
-boxGallery.insertAdjacentHTML('beforeend', galleryElementAll());
+boxGallery.insertAdjacentHTML('beforeend', generateGalleryMarkup());
 
 
 function galleryElement(name){
@@ -84,10 +84,8 @@ function galleryElement(name){
   </li>`;
 }
 
-function galleryElementAll() {
+function generateGalleryMarkup() {
  return images.map(galleryElement).join('');
 }
 
-let gallery = new SimpleLightbox('.gallery a', {captionDelay: 250, captionsData: 'alt'});
-gallery.on('show.simplelightbox', function () {
-});
+const gallery = new SimpleLightbox('.gallery a', {captionDelay: 250, captionsData: 'alt'});
